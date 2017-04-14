@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <p id="output"></p>
+    Num1 <input type="text" id="entertext1" >
+    Num2  <input type="text" id="entertext2" >
+    <button type="button" onclick="myFunction()">=</button>
+    <script type="text/javascript">
+  function myFunction(){
+    var empty = "";
+    var num1 = parseInt(document.getElementById('entertext1').value);
+    var num2 = parseInt(document.getElementById('entertext2').value);
+    var output = document.getElementById('output');
+   if( num1==empty){
+     alert("please enter number!");
+   }
+
+      output.innerHTML= num1+num2;
+    }
+
+    </script>
+  </body>
+</html>
